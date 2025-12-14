@@ -5,6 +5,6 @@ Simple Java Maven project with a Jenkins Pipeline that:
 - runs Maven tests
 - publishes JUnit test results
 
-### Run locally
+## Run locally
 ```bash
 mvn test
