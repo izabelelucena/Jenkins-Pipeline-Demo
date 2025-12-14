@@ -1,27 +1,23 @@
 pipeline {
-  agent any
+    agent any
 
-  tools {
-    maven 'Maven'
-    jdk 'JDK17'
-  }
-
-  stages {
-    stage('Checkout') {
-      steps {
-        checkout scm
-      }
-    }
-
-    stage('Test') {
-      steps {
-        sh 'mvn -q test'
-      }
-      post {
-        always {
-          junit 'target/surefire-reports/*.xml'
+    stages {
+        stage('Build') {
+            steps {
+                sh './mvnw clean compile'
+            }
         }
-      }
+
+        stage('Test') {
+            steps {
+                sh './mvnw test'
+            }
+        }
     }
-  }
+
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
+    }
 }
