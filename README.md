@@ -5,6 +5,10 @@ Simple Java Maven project with a Jenkins Pipeline that:
 - runs Maven tests
 - publishes JUnit test results
 - Jenkins-Pipeline-Demo
+
+## Structure
+```bash
+
 ├── src
 │   ├── main
 │   │   └── java
@@ -24,5 +28,6 @@ Simple Java Maven project with a Jenkins Pipeline that:
 ## Run locally
 ```bash
 mvn test
+
 
 
