@@ -8,3 +8,21 @@ Simple Java Maven project with a Jenkins Pipeline that:
 ## Run locally
 ```bash
 mvn test
+
+## Structure
+
+Jenkins-Pipeline-Demo
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── demo
+│   │           └── Calculator
+│   └── test
+│       └── java
+│           └── demo
+│               └── CalculatorTest
+├── Jenkinsfile
+├── pom.xml
+├── mvnw / mvnw.cmd
+├── target
+└── README.md
