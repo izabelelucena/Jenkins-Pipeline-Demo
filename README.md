@@ -4,9 +4,16 @@ Simple Java Maven project with a Jenkins Pipeline that:
 - checks out the repo
 - runs Maven tests
 - publishes JUnit test results
-- Jenkins-Pipeline-Demo
 
-## Structure
+
+## Run locally
+
+mvn test
+
+  
+
+
+## Jenkins-Pipeline-Demo Structure
 ```bash
 
 ├── src
@@ -25,9 +32,9 @@ Simple Java Maven project with a Jenkins Pipeline that:
 └── README.md
 
 
-## Run locally
-```bash
-mvn test
+
+
+
 
 
 
